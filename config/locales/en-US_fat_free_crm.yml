@@ -178,7 +178,7 @@ en-US:
   msg_cant_do: "Can't %{action} the %{asset} since it's no longer available."
   msg_email_not_found: No user was found with that email address.
   msg_enter_new_password: Please enter your new password.
-  msg_goodbye: You have been logged out. Thank you for using Fat Free CRM!
+  msg_goodbye: You have been logged out.
   msg_invalid_password: "^Please specify valid current password"
   msg_invalig_login: Invalid username or password.
   msg_last_login: Your last login was on %{value}.
@@ -189,8 +189,8 @@ en-US:
   msg_password_updated: Password was successfully updated.
   msg_pwd_instructions_sent: Instructions to reset your password have been sent to you. Please check your email.
   msg_require_admin: You must be Administrator to access this page.
-  msg_successful_signup: Successful signup, welcome to Fat Free CRM!
-  msg_welcome: Welcome to Fat Free CRM!
+  msg_successful_signup: Successful signup, welcome to Impact Marching!
+  msg_welcome: Welcome to Impact Marching!
 
   # Options.
   #----------------------------------------------------------------------------
@@ -580,8 +580,8 @@ en-US:
 
   # Views -> Admin
   #----------------------------------------------------------------------------
-  back_to_crm: Back to Fat Free CRM
-  crm_admin_page: Fat Free CRM Administration
+  back_to_crm: Back to Impact Marching
+  crm_admin_page: Administration
 
   # Views -> Admin -> Users.
   #----------------------------------------------------------------------------

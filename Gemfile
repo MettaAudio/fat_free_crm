@@ -6,8 +6,9 @@ gem 'rake',  '0.8.7'
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
 # gem "mysql2", "0.3.10"
-# gem "sqlite3"
-gem "pg", ">= 0.9.0"
+group :production do
+  gem "pg", ">= 0.9.0"
+end
 
 gem 'authlogic',           '~> 3.0.3'
 gem 'acts_as_commentable', '>= 3.0.1'
@@ -20,13 +21,14 @@ gem 'simple_form',         '~> 1.5.2'
 gem 'prototype-rails',     '>= 3.1.0'
 gem 'ffaker',              '>= 1.5.0' # For demo data
 gem 'uglifier'
+gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails', '~> 3.1.1'
   gem 'coffee-rails', '~> 3.1.1'
-  gem 'therubyracer'
+  # gem 'therubyracer'
 end
 
 group :development, :test do
@@ -34,6 +36,12 @@ group :development, :test do
   gem 'ruby-debug19', :platform => :mri_19, :require => 'ruby-debug'
   gem 'annotate',           '>= 2.4.0'
   gem 'awesome_print',      '>= 0.3.1'
+  gem "sqlite3"
+  gem "wirble"
+  gem "hirb"
+  gem "what_methods"
+  gem "taps"
+  
 
   gem 'test-unit', '1.2.3', :platform => :mri_19
   gem 'rspec-rails',        '>= 2.5.0'
