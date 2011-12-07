@@ -1,2 +1,19 @@
 Use this README file to introduce your application and point to useful places in the API for learning more.
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+Deploy on Heroku:
+
+RAILS_ENV=production bundle exec rake assets:precompile
+git add public/assets
+git commit -m "vendor compiled assets"
+
+Initial Deploy for Heroku:
+
+heroku create im-customers --stack cedar
+
+heroku run rake crm:setup USERNAME=admin PASSWORD=admin EMAIL=admin@example.com
+
+heroku config:add HEROKU=true
+
+heroku run rake crm:settings:load
+NOTE - This doesn't work on Cedar stack. To work around it, run it locally, and then use Taps to push the database up.
